@@ -1,0 +1,27 @@
+<import src="../template/questions_item.wxml" />
+
+<!--<slider bindchange="sliderchange" selected-color="#aaa" hidden="true" show-value value="{{sliders}}" />-->
+<view>
+  <view class="vTheislabel">
+    <text>问题总集</text>
+  </view>
+  <view class="sScroll" scroll-y="true" scroll-into-view="{{toView}}" bindscroll="scroll_change">
+    <view wx:for="{{lists}}" hover="true" hover-class="click" bindtap="item_click" class="vItem">
+      <image id="{{item.id}}" mode="aspectFit" src="/images/icons/noquick.png"></image>
+      <text>{{item.title}}</text>
+    </view>
+  </view>
+  <view class="vTheislabel">
+    <text>材料</text>
+  </view>
+  <view class="sign_content">
+    <view wx:for="{{stora}}" hover="true" hover-class="click" bindtap="item_click" class="sign_item">
+     <template is="q-item" data="{{item}}"/>
+    </view>
+  </view>
+</view>
+<view class="nullData">没有跟多信息</view>
+<view class="vThesearch">
+  <text>搜索</text>
+  <input placeholder="你可以在这里输入已经知道的问题名" bindconfirm="inputYes" value="{{inputOfvalue}}" />
+</view>

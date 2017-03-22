@@ -1,0 +1,5 @@
+<template name="q-item">
+  <image src="{{item.src}}" mode="aspectFill"></image>
+  <text class="questions_title">{{item.title}}</text>
+  <text class="howmuch">$30</text>
+</template>

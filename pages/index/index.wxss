@@ -1,0 +1,12 @@
+.vOld {
+  line-height: 50px;
+  background-color: rgba(200,200,200,0.3);
+  color: #aaa;
+}
+
+.vDay {
+  line-height: 50px;
+  color: rgba(200,90,150,0.7);
+  text-align: center;
+  font-size: 1.3em;
+}

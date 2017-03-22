@@ -1,0 +1,11 @@
+<view>
+  <view>{{year}}</view>
+  <picker-view indicator-style="height: 50px;" style="width: 100%; height: 300px;" value="{{value}}" bindchange="oldChange">
+    <picker-view-column>
+      <view class="vDay" wx:for="{{olds}}" data-date="{{item}}" >{{item}}</view>
+    </picker-view-column>
+        <picker-view-column>
+      <view class="vDay" wx:for="{{days}}" data-date="{{item}}" >{{item}}</view>
+    </picker-view-column>
+  </picker-view>
+</view>

@@ -1,0 +1,22 @@
+<view style="height: {{winHeight}}px; width: {{winWidth}}px; background-color: #fafafa">
+  <view class="vLine"></view>
+  <view class="vSetOld" bindtap="ToSetOld">
+    <text class="tLabelold">选择年龄</text>
+    <text class="tOld">{{old}}</text>
+    <image mode="aspectFit" src="/images/icons/go.png"></image>
+  </view>
+  <view class="vLabelName">
+    <text>名称:</text>
+    <input bindinput="itinput" class="iNameinput" placeholder="名称或外号" />
+  </view>
+  <view class="vLabelName">
+    <text>性别:</text>
+    <picker class="iNameinput" bindchange="sexChange" value="{{index}}" range="{{array}}">
+      <view class="picker">
+        {{array[index]}}
+      </view>
+    </picker>
+  </view>
+
+  <button class="bSure" bindtap="sure_click">确认</button>
+</view>

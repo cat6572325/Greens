@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/questions/questions",
+    "pages/process/process",
+    "pages/select/select",
+    "pages/index/index",
+    "pages/setOld/setOld"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle":"black"
+  },
+   "tabBar": {
+     "backgroundColor": "#fafafa",
+     "selectedColor": "#56abe4",
+     "color": "#a9b7b7",
+    "list": [{
+      "pagePath": "pages/questions/questions",
+      "iconPath": "images/system/tab_left.png",
+      "selectedIconPath": "images/system/tab_left_select.png",
+      "text": "存在问题"
+    }, {
+      "pagePath": "pages/select/select",
+      "iconPath": "images/system/tab_right.png",
+      "selectedIconPath": "images/system/tab_right_select.png",
+      "text": "教你一招"
+    }]
+  }
+}

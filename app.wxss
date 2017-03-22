@@ -1,0 +1,33 @@
+/**app.wxss**/
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+page {
+  background: #fafafa;
+}
+
+.questions_title {
+  margin: 10rpx;
+  font-size: 0.7em;
+  color: rgba(0, 0, 0, 0.78);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 35rpx;
+  height: 100rpx;
+}
+
+.howmuch {
+  color: #f00;
+  position: absolute;
+  right: 5rpx;
+  top: 5rpx;
+  font-size: 0.7em;
+}

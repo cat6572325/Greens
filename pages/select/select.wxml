@@ -1,0 +1,13 @@
+
+<view class="vThearea" >
+  <text>版块选择</text>
+  <image src="/images/icons/go.png"></image>
+</view>
+<view class="vThearea item" bindtap="goToprocess" >
+  <text>进度统一</text>
+  <image src="/images/icons/go.png" mode="aspectFit"></image>
+</view>
+<view class="vThearea" >
+  <text>用户互动</text>
+  <image src="/images/icons/go.png" mode="aspectFit"></image>
+</view>
